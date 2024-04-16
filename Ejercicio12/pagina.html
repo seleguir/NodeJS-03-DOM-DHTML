@@ -1,0 +1,27 @@
+<!--
+    12. Implementar un programa que permita añadir nodos de texto y eliminar nodos de texto de un párrafo (eliminar siempre el primer hijo de la lista)
+  if (nparrafo.hasChildNodes())
+  {
+    nparrafo.removeChild(nparrafo.firstChild);
+    contador--;
+  }
+La propiedad firstChild retorna la referencia al primer hijo que tiene un nodo de tipo elemento.
+ -->
+
+ <!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+</head>
+
+<body>
+    <p id="parrafo">Texto inicial:</p>
+    <input type="button" value="Agregar nodo de texto" onClick="agregar()">
+    <input type="button" value="Eliminar nodo de texto" onClick="eliminar()">
+    <script src="funciones.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!--
+ 4. Desarrollar una página que contenga dos div con dos párrafos cada uno. El primer div escribir todos su contenido en la misma línea, sin presionar la tecla "enter" o "entrada". El segundo div escribir los párrafos en líneas distintas.
+Mostrar cuando se presione un botón la cantidad de nodos hijos de cada div.
+Luego agregar otro botón que muestre la cantidad de nodos de tipo elemento empleando la propiedad 'children'
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="bloque1">
+        <p>Este es el primer párrafo</p><p>Este es el segundo párrafo</p>
+    </div>
+    <div id="bloque2">
+        <p>Este es el primer párrafo</p>
+        <p>Este es el segundo párrafo</p>
+    </div>
+    <input type="button" value="Cantidad de nodos hijo" onClick="cantidadHijos()">
+    <input type="button" value="Cantidad de hijos tipo elemento" onClick="cantidadHijosElemento()">
+    <script src="funciones.js"></script>
+</body>
+
+</html>
